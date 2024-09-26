@@ -1,0 +1,12 @@
+p {
+    color: pink;
+}
+
+li {
+    color: red;
+}
+
+footer a {
+    display: flex;
+    align-items: flex-end;
+}
