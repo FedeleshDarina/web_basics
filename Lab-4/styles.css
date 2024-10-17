@@ -1,0 +1,27 @@
+input {
+    margin-bottom: 10px;
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+button {
+    margin-bottom: 10px;
+}
+
+.message-input {
+    height: 30px;
+    margin-bottom: 0px;
+}
+
+.message-title {
+    margin-top: 10px;
+    display: flex;
+    align-items: end;
+}
+
+.checkbox-block {
+    display: flex;
+    flex-direction: column;
+}

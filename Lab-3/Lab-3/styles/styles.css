@@ -9,12 +9,18 @@ strong {
 
 h1 {
     text-align: center;
+    text-decoration: underline;
+
     color: red
 }
 
 ol,
 ul {
     border: 1px solid lightcoral;
+}
+
+a.pren {
+    text-decoration: none;
 }
 
 img {
