@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Checkpoint: початкова стадія */
+
+.addresses-wrapper {
+    padding: 20px;
+    /* 1. для addresses-wrapper задайте внутрішні відступи 20 пікселів */
+}
+
+.address__icon {
+    width: 70px;
+    /* 1. ширина address__icon */
+}
+
+.address__status {
+    width: 32px;
+    /* 1. ширина address__status */
+}
+
+/* 2. Задайте початковий чорновий стиль для блоку з адресою: */
+.address {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    /* тінь */
+    padding: 40px 20px;
+    /* внутрішні відступи */
+    border-radius: 10px;
+    /* скруглені края */
+    font-style: normal;
+    /* звичайний стиль шрифта */
+    background-color: #FFE4C4;
+    /* задній фон */
+}
+
+/* Checkpoint: Задано початковий чорновий стиль блоку адреси */
+
+/* 3. Застилемо кнопку для видалення адреси ... */
+.address__delete-btn {
+    background-color: #FF8E50;
+    /* задній фон */
+    color: white;
+    /* колір тексту */
+    text-decoration: none;
+    /* прибрати нижнє підкреслення */
+    font-size: 36px;
+    /* розмір шрифта */
+    line-height: 20px;
+    /* міжрядковий інтервал */
+    padding: 10px;
+    /* внутрішні відступи */
+    font-weight: bold;
+    /* жирний шрифт */
+    border-radius: 0 10px 0 10px;
+    /* радіус блоку */
+}
+
+/* 4. При наведенні миші на кнопку видалення ... */
+.address__delete-btn:hover {
+    background-color: #FFD050;
+    /* зміна фону при наведенні */
+}
+
+/* Checkpoint: Застилемо кнопку для видалення адреси */
+
+/* 5. Позиціювання кнопки видалення та іконки статусу */
+.address {
+    position: relative;
+    /* змінити позиціювання блоку адреси */
+}
+
+.address__status {
+    position: absolute;
+    /* позиціювання іконки статусу */
+    right: 10px;
+    /* відступ від краю */
+    bottom: 10px;
+}
+
+.address__delete-btn {
+    position: absolute;
+    /* позиціювання кнопки видалення */
+    right: 10px;
+    /* відступ від краю */
+    top: 30px;
+    /* вертикальне центрирування */
+    transform: translateY(-50%);
+    /* для вирівнювання по центру */
+}
+
+/* Checkpoint: Позиціювання кнопки видалення та іконки статусу */
+
+/* 6. Зовнішній відступ після назви адреси */
+.address__header {
+    margin-bottom: 10px;
+    /* зовнішній відступ */
+}
+
+/* 7. Іконка адреси повинна бути ліворуч ... */
+.address__icon {
+    float: left;
+    /* обтікання текстом */
+    margin-right: 10px;
+    /* зовнішній відступ справа */
+}
+
+/* Checkpoint: Позиціювання іконки адреси і заголовку */
+
+/* 8. Додамо до HTML частини ... */
+
+/* 9. Редагування HTML: 3 блоки і видалення зайвих статусів */
+
+/* 10. Розміщення адрес у один рядок */
+.addresses-wrapper {
+    display: flex;
+    /* для розміщення у рядок */
+    flex-wrap: wrap;
+    /* обгортка */
+    justify-content: space-between;
+    /* розподіл простору */
+}
+
+.address {
+    width: 32%;
+    /* ширина блоку з адресою */
+    margin: 1%;
+    /* зовнішні відступи */
+    position: relative
+}
+
+/* 11. Обнулення зовнішніх відступів у першого та останнього блоків */
+.address:first-child {
+    margin-left: 0;
+    /* обнулити лівий відступ */
+    background-color: #F0FFC1;
+    /* для візуалізації */
+}
+
+.address:last-child {
+    margin-right: 0;
+    /* обнулити правий відступ */
+    background-color: #B6FFDA;
+    /* для візуалізації */
+}
+
+/* Checkpoint: Розміщуємо адреси у один рядок */
+
+/* 12. При наведенні миші на будь-який блок з адресою ... */
+.address:hover {
+    background-color: #F3F3F3;
+    /* зміна фону при наведенні */
+}
+
+/* 13. Мобільний вигляд */
+@media (max-width: 767px) {
+    .address {
+        width: 100%;
+        /* ширина блоку */
+        margin: 0;
+        /* обнулити зовнішні відступи */
+        padding-bottom: 20px;
+        /* нижній відступ */
+    }
+}
