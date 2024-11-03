@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Притулок для тварин</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Хедер -->
+    <header>
+        <img src="https://img.icons8.com/doodle/48/000000/cat.png" alt="Лого">
+        <nav>
+            <ul>
+                <li><a href="#hero">Головна</a></li>
+                <li><a href="#about">Про нас</a></li>
+                <li><a href="#contact-form">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Головний блок -->
+    <section class="hero" id="hero">
+        <h1>Допоможіть нашим друзям</h1>
+        <p>Ми рятуємо життя тварин. Зробіть донат, щоб підтримати притулок!</p>
+        <button class="donate-btn">Зробити донат</button>
+    </section>
+
+    <!-- Секція Про нас -->
+    <section class="about" id="about">
+        <div class="text">
+            <h2>Про наш притулок</h2>
+            <p>
+                Наш притулок працює для допомоги покинутим тваринам, ми забезпечуємо їм їжу, лікування та дім.
+                Завдяки вашій підтримці ми можемо врятувати більше життів. Наша команда волонтерів щодня працює над тим,
+                щоб поліпшити життя тварин, які опинилися в скрутних обставинах.
+            </p>
+        </div>
+        <div class="image">
+            <img src="./image/kak-koshki-vidyat-mir.jpg" alt="Фото тварини">
+        </div>
+    </section>
+
+    <!-- Слайдер -->
+    <section class="slider">
+        <div class="slider-item">
+            <img src="./image/0-02-05-80164c0b5959cd1fec43226e6b05be0879389131afc7555df06066f4dcf8f42e_dfb0c5339ff94ec4.jpg"
+                alt="Лакі">
+            <h3>Лакі</h3>
+        </div>
+        <div class="slider-item">
+            <img src="./image/0-02-05-3978e4254c14de2af5644f67311aec7fce998695063f4128192b4041a977b05c_c982b503838b1671.jpg"
+                alt="Мурчик">
+            <h3>Мурчик</h3>
+        </div>
+        <div class="slider-item">
+            <img src="./image/0-02-05-a9d10541c00f76e2af155616729e4be2854427fa449752306986492d40e4aceb_1ec40c53ad6f4837.jpg"
+                alt="Соня">
+            <h3>Соня</h3>
+        </div>
+        <div class="slider-item">
+            <img src="./image/0-02-05-bd6900e7a3d577418ded34ed19b33984b1e872a191a23201945d078307203057_ccdad32cedc8da79.jpg"
+                alt="Макс">
+            <h3>Макс</h3>
+        </div>
+        <div class="slider-item">
+            <img src="./image/0-02-05-f958edff523c923ef22fd50d6cbe37538cea644a207cd2ac38d00de25a22aa29_b9b07a5963445acd.jpg"
+                alt="Камікадзе">
+            <h3>Камікадзе</h3>
+        </div>
+        <div class="slider-item">
+            <img src="./image/0-02-05-d1cb8cc38f0e4a6d70eb7ecc13af0154de4017897029afa03cd502f1e5292702_59a3dd1bc5462eca.jpg"
+                alt="Терен">
+            <h3>Терен</h3>
+        </div>
+        <div class="slider-item">
+            <img src="./image/0-02-05-bd6900e7a3d577418ded34ed19b33984b1e872a191a23201945d078307203057_ccdad32cedc8da79.jpg"
+                alt="Річард">
+            <h3>Річард</h3>
+        </div>
+    </section>
+
+    <!-- Форма для заповнення інформації -->
+    <section class="contact-form" id="contact-form">
+        <div class="form-container">
+            <h2>Залиште свої дані для всиновлення</h2>
+            <form action="https://httpbin.org/post" method="POST">
+                <input type="text" name="first_name" placeholder="Ім'я" required>
+                <input type="text" name="last_name" placeholder="Прізвище" required>
+                <input type="tel" name="phone" placeholder="Номер телефону" required>
+                <button type="submit">Відправити</button>
+            </form>
+        </div>
+        <div class="image-container"></div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <p>Контакти: телефон +380123456789 | email: fedelesh@com</p>
+        <p>Адреса: вул. Собранецька, 1, Ужгород, Україна</p>
+    </footer>
+
+    <script src="app.js" defer></script>
+</body>
+
+</html>
